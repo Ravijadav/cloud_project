@@ -1,0 +1,233 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+ <link href="bootstrap/css/simple-sidebar.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Add Address</title>
+<style>
+.fk-lcat-main-header {
+    padding: 5px 5px 5px 9px;
+    font-size: 16px;
+    font-weight: bold;
+    background: url("images/diag_tile-c3eb9dc7.png") repeat scroll left top #014A72;
+    color: #FFF;
+}
+.fk-suc-msg {
+    background: url("images/tick1-042bc15a.png") no-repeat scroll 5px 10px #CFC;
+    border: 1px solid #696;
+    color: #008000;
+    font-size: 13px;
+    padding: 10px 0px 10px 30px;
+    text-align: left;
+}
+.btn.btn-blue:hover {
+    border: 1px solid #004B91;
+    background: linear-gradient(to bottom, #007FB8 1%, #6EBAD5 3%, #059FC6 7%, #007FB8 100%) repeat scroll 0% 0% transparent;
+}
+.btn.btn-blue {
+    border: 1px solid #004B91;
+    background: linear-gradient(to bottom, #007FB8 1%, #6EBAD5 3%, #007FB8 7%, #007FB8 100%) repeat scroll 0% 0% transparent;
+}
+.fk-sav-ad {
+    border-top: 1px dotted #CCC;
+    margin: 15px 0px 0px;
+    overflow: hidden;
+    width: 435px;
+}
+.fk-input {
+    font-size: 13px;
+    padding: 5px 6px;
+    border: 1px solid #CCC;
+    resize: none;
+    font-family: inherit;
+}
+
+.account_page_address_info.sel {
+    border-color: #DDD;
+}
+.account_page_address_info.sel {
+    border-color: #DDD;
+}
+.account_page_address_info {
+    position: relative;
+}
+.account_page_address_info {
+    padding: 10px;
+    font-weight: normal;
+    float: left;
+    text-align: left;
+    border: 3px solid #FFF;
+    background: #F2F2F2 none repeat scroll 0% 0%;
+    margin: 5px;
+    width: 180px;
+}
+.account_page_address_info_btn a {
+    text-decoration: none;
+}
+.account_page_address_info_btn {
+    border-top: 1px dotted #CCC;
+    padding-top: 5px;
+}
+.account_page_address_info_btn {
+    width: 100%;
+    text-align: center;
+    vertical-align: bottom;
+    float: left;
+}
+.fk-err-all {
+    background: #FCE7E7 none repeat scroll 0% 0%;
+    border: 1px solid #B00;
+    color: #B00;
+    padding: 5px;
+    text-align: left;
+}
+</style>
+</head>
+<body  style = "background:#F5F5F5;" >
+    <div class="container" style = "background:white;">
+    <br>
+     <div class="panel-body" >
+	<div class="panel-body" id="sidebar-wrapper">
+	       
+            <ul class="sidebar-nav">
+            <br>
+                <li class="sidebar-brand" >
+                   <h6>  <a href="">Home</a>>My Account</h6>
+                 </li>
+               <br>
+                <li  >
+                   <div class="fk-lcat-main-header">
+                     <strong style="color:white;" > MY ACCOUNT</strong>
+                    </a></div>
+                    
+                 </li>
+                <br>
+                  <li class="sidebar-brand">
+                   
+                      <strong style="color:#808080;">  ORDERS</strong>
+                   
+                 </li>
+                 
+                <li>
+                    <a href="myorders">My Orders</a>
+                </li>
+                
+                <hr>
+                 <li class="sidebar-brand">
+                   
+                      <strong style="color:#808080;">  PAYMENTS</strong>
+                 
+                 </li>
+               
+                <li>
+                    <a href="#">Wallet</a>
+                </li>
+               
+                <li>
+                    <a href="#">My Reviews & Ratings
+</a>
+                </li>
+               
+               
+                
+                <hr>
+                
+                 <li class="sidebar-brand">
+                   
+                    <strong style="color:#808080;">  SETTINGS</strong>
+                   
+                 </li>
+                
+                <li>
+                    <a href="Personal.jsp">Personal Information</a>
+                </li>
+                <li>
+                    <a href="changePassword">Change password</a>
+                </li>
+                <li>
+                    <a href="getaddress">Addresses</a>
+                </li>
+               
+                <li>
+                    <a href="updateEmail">Update Email</a>
+                </li>
+                <li>
+                    <a href="deactivateAccount">Deactive Account</a>
+                </li>
+                
+            </ul>
+       
+		
+		<br>
+		<div class="col-md-8 col-md-offset-2">
+				<h3 >Add a New Address</h3>
+				<br>
+				<form action="address" class="form-horizontal" method="post" enctype="multipart/form-data">
+							
+								<label >First Name</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								<input type="text"  name="name" id="name">
+							
+					<br><br>
+					<label >Street Address</label><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp
+					<textarea name="street" rows="5" cols="40"></textarea>
+                    <br><br>	
+								<label >Landmark</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text"
+									 name="landmark" id="landmark">
+						<br><br>
+					
+						<label >City</label>&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text"
+									 name="city" id="city">
+						<br><br>
+						
+					         <label>State</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+					         <select name="state">
+							 <option>SELECT</option>
+							 <option>Assam</option> 
+							 <option>Delhi</option> 
+							 <option>Goa</option> 
+							 <option>Kerala</option> 
+							 </select>
+							 <br><br>
+							 <label >Pincode</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text"
+									 name="pincode" id="pincode">
+						<br><br>
+								<label>Phone Number</label>&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text"
+									 name="mobile" id="mobile">
+						
+					<br><br>
+						&nbsp&nbsp&nbsp	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-blue" onclick="document.getElementById('per-info-suc').style.visibility = 'visible'";>Save Changes</button>
+						
+				</form>
+				<div class="fk-suc-msg" id="per-info-suc">Address added successfully.</div>		
+	        <div class="fk-err-all" id="per-info-error">Invalid Mobile Number.</div>
+				<div class="fk-sav-ad" id="address_infos"> <span class="hdr">Your Saved Addresses</span> <br>
+				  <s:iterator value="resultList" >
+				 <div class="account_page_address_info sel" id="address_ADD14278362399783225"> 
+				 <div class="account_page_address_data"> <span><b><s:property value="ad_name"/></b></span><br> 
+				 <span><s:property value="address"/></span><br> <span><s:property value="landmark"/></span><br>
+                     <span><s:property value="city"/> - <s:property value="pincode"/></span><br>
+                     <span><s:property value="state"/></span><br> <span>Ph:<s:property value="mobile"/></span><br>  </div>
+                      <div class="account_page_address_info_btn"> 
+                      <div><input checked="checked" id="default_billing_address" name="default_billing_address" onclick="setDefaultAddress('ADD14278362399783225')" type="radio"> &nbsp; 
+                      <span>Default Address</span></div> </div>
+                       <div class="account_page_address_info_btn"> <a href="#" onclick="deleteAddress('ADD14278362399783225');return false;">Delete address</a> </div> 
+                      <div class="cls"></div> </div> 
+                      </s:iterator>
+                      </div>
+		 </div></div>
+		</div>
+
+</div>
+ <script>
+document.getElementById('per-info-suc').style.visibility = "hidden";
+document.getElementById('per-info-error').style.visibility = "hidden";
+
+
+</script>
+</body>
+</html>

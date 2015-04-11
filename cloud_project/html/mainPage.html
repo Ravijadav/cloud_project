@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/json">
+
+</head>
+<body>
+<form action="http://127.0.0.1:3000/consumers" method="post" enctype="application/x-www-form-urlencoded">
+<div align="center" style="border:1px solid red">
+<h1>Welcome to findInterest.com</h1>
+</div>
+<br><br><br>
+<div align='center'>
+<tr>
+First Name:
+<input type="text" name="fname">
+</tr>
+<br><br>
+Last Name	:
+<input type="text" name="lname">
+<br><br>
+userName		:
+<input type="text" name="userName">
+<br><br>
+password	:
+<input type="text" name="password">
+<br><br>
+location		:
+<input type="text" name="location">
+<br><br>
+<tr>City		:
+<input type="text" name="city">
+</tr>
+<br><br>
+email	:
+<input type="email" name="email">
+<br><br>
+interestCategory	:
+<input type="text" name="interestCategory">
+<br><br>
+interestSubCategory	:
+<input type="text" name="interestSubCategory">
+
+<br><br>
+<input type="submit" value="signup" align="center">
+
+</div>
+
+</form>
+<br><br><br>
+<form action="http://127.0.0.1:3000/myEvents/" method="get" enctype="application/x-www-form-urlencoded">
+UserName:
+<input id="uname" type="text" name="uname">
+<br><br>
+Password:
+<input id="pass" type="text" name="pass">
+<br><br>
+<input type="submit" value="login">
+</form>
+</body>
+</html>
